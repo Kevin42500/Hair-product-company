@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair Product Company</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/8468019/pexels-photo-8468019.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        .entry-page, .home-page {
+            display: none;
+        }
+        .entry-page.active, .home-page.active {
+            display: flex;
+        }
+        .entry-page {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+        }
+        h1 {
+            color: #fff;
+            font-size: 3em;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.2em;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        .home-background {
+            background-image: url('images/home-background.jpg');
+        }
+    </style>
+</head>
+<body>
+    <!-- Entry Page -->
+    <div class="entry-page active" id="entryPage">
+        <h1>Welcome to Our Hair Product Company</h1>
+        <button id="enterBtn">Enter</button>
+    </div>
+
+    <!-- Home Page -->
+    <div class="home-page" id="homePage">
+        <div class="container home-background">
+            <header>
+                <h1>Hair Product Company</h1>
+                <nav>
+                    <a href="products.html">Products</a>
+                    <a href="advertisement.html">Advertisements</a>
+                    <a href="checkout.html">Checkout</a>
+                    <a href="exit.html">Exit</a>
+                </nav>
+            </header>
+
+            <main>
+                <h2>About Us</h2>
+                <p>Our company was founded with the aim of providing the best hair care products to people around the world. We specialize in organic and eco-friendly hair treatments that make your hair shine and stay healthy.</p>
+                
+            </main>
+
+            <footer>
+                <p>© 2024 Hair Product Company. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to switch between Entry Page and Home Page
+        document.getElementById('enterBtn').addEventListener('click', function() {
+            document.getElementById('entryPage').classList.remove('active');
+            document.getElementById('homePage').classList.add('active');
+        });
+    </script>
+</body>
+</html>

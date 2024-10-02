@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/6429662/pexels-photo-6429662.jpeg'); /* Corrected direct image URL */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Light background to make content readable */
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        td img {
+            width: 100px;
+            height: auto;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our Products</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="advertisement.html">Advertisements</a>
+                <a href="checkout.html">Checkout</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Available Products</h2>
+            <table>
+                <tr>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td><img src="images/shampoo.jpg" alt="Shampoo"></td>
+                    <td>Organic Shampoo for strong hair.</td>
+                    <td>$15.99</td>
+                </tr>
+                <tr>
+                    <td><img src="images/conditioner.jpg" alt="Conditioner"></td>
+                    <td>Hydrating Conditioner for smooth hair.</td>
+                    <td>$18.99</td>
+                </tr>
+                <tr>
+                    <td><img src="images/hair-oil.jpg" alt="Hair Oil"></td>
+                    <td>Nourishing Hair Oil for dry scalp.</td>
+                    <td>$12.99</td>
+                </tr>
+            </table>
+        </main>
+
+        <footer>
+            <p>© 2024 Hair Product Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

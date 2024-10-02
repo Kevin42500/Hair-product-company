@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisements</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('images/ads-background.jpg');
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .scrolling-text {
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+        }
+        .scrolling-text p {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-text 15s linear infinite;
+            color: #fff;
+            font-weight: bold;
+        }
+        @keyframes scroll-text {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .ads-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        .ads-table th, .ads-table td {
+            padding: 15px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .ads-table th {
+            background-color: #333;
+            color: white;
+        }
+        .ads-table img {
+            width: 150px;
+        }
+        .subscribe-form {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+        }
+        .subscribe-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .subscribe-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+        }
+        .subscribe-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+        }
+        .subscribe-form button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Latest Ads</h1>
+            <nav>
+                <a href="home.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="checkout.html">Checkout</a>
+                <a href="exit.html">Exit</a>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Check Out Our Latest Promotions</h2>
+            
+            <div class="scrolling-text">
+                <p>Buy 2 Get 1 Free on all Hair Oils! - Limited Offer</p>
+            </div>
+
+            <table class="ads-table">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Image</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Organic Shampoo</td>
+                        <td>Best shampoo for hair growth and shine.</td>
+                        <td><img src="images/shampoo-ad.jpg" alt="Shampoo Ad"></td>
+                        <td>$15.99</td>
+                    </tr>
+                    <tr>
+                        <td>Hair Conditioner</td>
+                        <td>Leave your hair soft and silky with our conditioner.</td>
+                        <td><img src="images/conditioner-ad.jpg" alt="Conditioner Ad"></td>
+                        <td>$18.99</td>
+                    </tr>
+                    <tr>
+                        <td>Hair Oil</td>
+                        <td>Natural oils for scalp nourishment and hair strength.</td>
+                        <td><img src="images/hair-oil-ad.jpg" alt="Hair Oil Ad"></td>
+                        <td>$12.99</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Subscription Form -->
+            <div class="subscribe-form">
+                <h2>Subscribe for Latest Offers</h2>
+                <form action="subscribe-success.html" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2024 Hair Product Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
